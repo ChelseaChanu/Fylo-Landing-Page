@@ -22,13 +22,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./solution/fylo%20dark%20theme%20desktop.png)
-![Mobile](/solution/fylo%20dark%20theme%20mobile.png)
-![Tablet](/solution/fylo%20dark%20theme%20tablet.png)
+- Desktop: [Desktop View](./solution/fylo%20dark%20theme%20desktop.png)
+- Tablet: [Tablet View](./solution/fylo%20dark%20theme%20tablet.png)
+- Mobile: [Mobile View](./solution/fylo%20dark%20theme%20mobile.png)
 ### Links
 
 - Solution URL: [solution URL](https://github.com/ChelseaChanu/Fylo-Landing-Page)
-- Live Site URL: [Add live site URL here](https://chelseachanu.github.io/Fylo-Landing-Page/)
+- Live Site URL: [live site URL](https://chelseachanu.github.io/Fylo-Landing-Page/)
 
 ## My process
 
