@@ -1,0 +1,600 @@
+:root{
+    --Dark_Blue_footer: hsl(216, 53%, 9%);
+    --Dark_Blue_intro: hsl(217, 28%, 15%);
+    --Dark_Blue_main: hsl(218, 28%, 13%);
+    --Dark_Blue_testimonal: hsl(219, 30%, 18%);
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --Light_Red: hsl(0, 100%, 63%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--Dark_Blue_intro);
+    color: var(--White);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 14px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 2.5rem;
+}
+
+.company-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(images/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 3rem;
+}
+
+.name{
+    font-size: 3rem;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+}
+
+.tabs a{
+    color: hsl(0, 0%, 70%);;
+    text-decoration: none;
+}
+
+.tabs a:hover{
+    color: var(--White);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* *******MAIN-CONTAINER******** */
+
+.main-container{
+    background-color: var(--Dark_Blue_main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    width: 100%;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+/* *******INTRO******** */
+
+.intro-container{
+    background: var(--Dark_Blue_intro) url(images/bg-curvy-desktop.svg) bottom no-repeat;
+    background-size: 100% 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.intro-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+.intro-content{
+    width: 70%;
+}
+
+.btn{
+    background-image: linear-gradient(to right, var(--Cyan),var(--Blue));
+    border-style: none;
+    border-radius: 25px;
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 15rem;
+}
+
+.btn:hover{
+    background-image:linear-gradient(hsl(176, 68%, 74%),hsl(176, 68%, 74%));
+}
+/* *******CARD-SECTION******** */
+
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    gap: 4rem;
+    z-index: 1;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    text-align: center;
+}
+
+.card-logo{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 5rem;
+}
+
+.lg1{
+    background-image: url(images/icon-access-anywhere.svg);
+}
+
+.lg2{
+    background-image: url(images/icon-security.svg);
+}
+
+.lg3{
+    background-image: url(images/icon-collaboration.svg);
+}
+
+.lg4{
+    background-image: url(images/icon-any-file.svg);
+}
+
+.card-heading{
+    margin-bottom: 0;
+}
+
+.card-content{
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* *******PRODUCTIVE-SECTION******** */
+
+.productive-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.productive-container img{
+    width:60%;
+}
+
+.productive-section{
+    width: 32%;
+}
+
+.prod-heading{
+    font-size: 2.3rem;
+}
+
+.productive-section a{
+    color: var(--Cyan);
+    display: inline-flex;
+    align-items: center;
+}
+
+.productive-section a::after{
+    content: " ";
+    background-image: url(images/icon-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom:2px solid var(--Cyan);
+    height: 1rem;
+    width: 1rem;
+    margin-top: -1px;
+}
+
+/* *******CARD-PROFILE-SECTION******** */
+
+/* .card-profile-cont::before{
+    content: " ";
+    background-image: url(images/bg-quotes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    left: -10px;
+    top: -3rem;
+    z-index: -1;
+} */
+
+.card-profile-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.2rem;
+    position: relative;
+}
+
+.profile-card{
+    background-color: var(--Dark_Blue_testimonal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 7px;
+    width: 15rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 4px black;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.profile-name{
+    margin: 0;
+}
+
+.designation{
+    font-size: 10px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.give-space{
+    height: 10rem;
+}
+
+/* *******GET STARTED******** */
+
+.getStarted{
+    background-color: var(--Dark_Blue_intro);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 45rem;
+    text-align: center;
+    padding: 3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5%;
+    z-index: 1;
+}
+
+.getStarted p, h1{
+    margin: 0;
+}
+
+.getStarted p{
+    width: 88%;
+}
+
+input{
+    border-style: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    width: 25rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: hsl(0, 0%, 70%);
+    font-size: 12px;
+}
+
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.email-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.warning{
+    display: none;
+    color: var(--Light_Red);
+    text-align: left;
+}
+
+/* *******FOOTER******** */
+
+footer{
+    background-color: var(--Dark_Blue_footer);
+    padding-top: 3rem;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8rem 3rem 5rem;
+    gap: 3rem;
+    height: 15rem;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 90%;
+    position: relative;
+}
+
+.footer-content p{
+    margin: 0;
+}
+
+.location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
+    width: 20rem;
+}
+
+.location-icon{
+    background-image: url(images/icon-location.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.address{
+    margin: 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobile, .email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mobile-icon, .email-icon{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+}
+
+.mobile-icon{
+    background-image: url(images/icon-phone.svg);
+}
+
+.email-icon{
+    background-image: url(images/icon-email.svg);
+}
+
+.aboutFylo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.section-1, .section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icon{
+    border-radius: 15px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+/* *******RESPONSIVE******** */
+
+@media(max-width:900px){
+    img{
+        width: 90%;
+    }
+
+    .intro-section{
+        width: 80%;
+    }
+
+    .card-section{
+        grid-template-columns: 1fr;
+    }
+
+    .card-heading{
+        font-size: 1.4rem;
+    }
+
+    .card-content{
+        font-size: 1rem;
+    }
+
+    .productive-container{
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2rem;
+    }
+
+    .productive-container img{
+        width: 100%;
+    }
+
+    .productive-section{
+        width: 80%;
+    }
+
+    .card-profile-cont{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-card{
+        width: 60%;
+    }
+
+    .getStarted{
+        width: 70%;
+    }
+
+    .input-field{
+        flex-direction: column;
+    }
+
+    .input-field .btn{
+        height: 3.3rem;
+        width: 100%;
+    }
+
+    footer{
+        padding-top: 12rem;
+    }
+
+    .footer-container{
+        height: auto;
+    }
+
+    .footer-content, .aboutFylo{
+        flex-direction: column;
+    }
+
+    .footer-content p{
+        font-size: 1rem;
+    }
+
+    .location{
+        width: 85%;
+    }
+
+    .icons{
+        position:absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10%;
+    }
+    
+    .icons img{
+        width: 15px;
+    }
+}
+
+@media(max-width:500px){
+    .navbar{
+        padding: 1rem;
+    }
+
+    .tabs a{
+        font-size: 12px;
+    } 
+
+    .main-container{
+        padding-bottom: 20rem;
+    }
+
+    .intro-container{
+        background-image: url(images/bg-curvy-mobile.svg);
+    }
+
+    .logo{
+        width: 2.5rem;
+        height: 2rem;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+
+    .input-field input{
+        width: 12rem;
+    }
+
+    .intro-section{
+        width: 100%;
+    }
+
+    .intro-content{
+        width: 90%;
+    }
+
+    .card{
+        width: 20rem;
+    }
+
+    .card-content{
+        font-size: 14px;
+    }
+
+    .productive-section{
+        width: 100%;
+    }
+
+    .prod-heading{
+        font-size: 2rem;
+    }
+
+    .location{
+        width: 100%;
+    }
+}

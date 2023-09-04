@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Fylo landing page</title>
+
+  <script>
+    function emailValidation(){
+      let email = document.getElementById("email").value;
+      let warning = document.querySelector(".warning");
+      let regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+      if(regx.test(email)){
+        warning.style.display = "none";
+        return true;
+      }
+      else{
+        warning.style.display = "block";
+        return false;
+      }
+
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="company-logo">
+      <div class="logo"></div>
+      <h1 class="name">Fylo</h1>
+    </div>
+    <div class="tabs">
+      <a href="/">Features</a>
+      <a href="/">Team</a>
+      <a href="/">Sign In</a>
+    </div>
+  </nav>
+  <main class="main-container">
+    <div class="intro-container">
+      <img src="images/illustration-intro.png" alt="illustration-intro">
+      <div class="intro-section">
+        <h1 class="intro-heading">All your files in one secure location, accessible anywhere.</h1>
+        <p class="intro-content">
+          Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+    <div class="card-section">
+      <div class="card">
+        <div class="card-logo lg1"></div>
+        <h3 class="card-heading">Access your files, anywhere</h3>
+        <p class="card-content">
+          The ability to use a smartphone, tablet, or computer to access your account means your 
+          files follow you everywhere.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-logo lg2"></div>
+        <h3 class="card-heading">Security you can trust</h3>
+        <p class="card-content">
+          2-factor authentication and user-controlled encryption are just a couple of the security 
+          features we allow to help secure your files.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-logo lg3"></div>
+        <h3 class="card-heading">Real-time collaboration</h3>
+        <p class="card-content">
+          Securely share files and folders with friends, family and colleagues for live collaboration. 
+          No email attachments required.
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-logo lg4"></div>
+        <h3 class="card-heading">Store any type of file</h3>
+        <p class="card-content">
+          Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
+          file types to be securely stored and shared.
+        </p>
+      </div>
+    </div>
+
+    <div class="productive-container">
+      <img src="images/illustration-stay-productive.png" alt="illustration-stay-productive">
+      <div class="productive-section">
+        <h1 class="prod-heading">Stay productive, wherever you are</h1>
+        <p class="content">
+          Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+          storage needs.
+        </p>
+        <p class="content">
+          Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+          attachments required.
+        </p>
+        <a href="/">See how Fylo works</a>
+      </div>
+    </div>
+
+    <div class="card-profile-cont">
+      <div class="profile-card">
+        <p class="content">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.
+        </p>
+        <div class="profile">
+          <img src="images/profile-1.jpg" alt="profile-1" class="image">
+          <div class="profile-details">
+            <h5 class="profile-name">Satish Patel</h5>
+            <p class="designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <p class="content">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.
+        </p>
+        <div class="profile">
+          <img src="images/profile-2.jpg" alt="profile-2" class="image">
+          <div class="profile-details">
+            <h5 class="profile-name">Bruce McKenzie</h5>
+            <p class="designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <p class="content">
+          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.
+        </p>
+        <div class="profile">
+          <img src="images/profile-3.jpg" alt="profile-3" class="image">
+          <div class="profile-details">
+            <h5 class="profile-name">Iva Boyd</h5>
+            <p class="designation">Founder & CEO, Huddle</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="getStarted">
+      <h1>Get early access today</h1>
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+        questions, our support team would be happy to help you.
+      </p>
+      <div class="input-field">
+        <div class="email-cont">
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+          <p class="warning">Please enter correct format.</p>
+        </div>
+        <button onclick="emailValidation()" class="btn">Get Started For Free</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="company-logo">
+        <div class="logo"></div>
+        <h1 class="name">Fylo</h1>
+      </div>
+      <div class="footer-content">
+        <div class="location">
+          <div class="location-icon"></div>
+          <p class="address">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua
+          </p>
+        </div>
+        <div class="contact">
+          <div class="mobile">
+            <div class="mobile-icon"></div>
+            <p class="number">+1-543-123-4567</p>
+          </div>
+          <div class="email">
+            <div class="email-icon"></div>
+            <p class="email-add">example@fylo.com</p>
+          </div>
+        </div>  
+        <div class="aboutFylo">
+          <div class="section-1">
+            <p>About Us</p>
+            <p>Jobs</p>
+            <p>Press</p>
+            <p>Blog</p>
+          </div>
+          <div class="section-2">
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="social-icon"><img src="images/facebook-16.png" alt="facebook-16"></div>
+          <div class="social-icon"><img src="images/twitter-16.png" alt="twitter-16.png-16"></div>
+          <div class="social-icon"><img src="images/instagram-16.png" alt="instagram-16.png-16"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
